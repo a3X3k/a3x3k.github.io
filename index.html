@@ -20,7 +20,8 @@
 	<audio id="myAudio" src="Assets/1.mp3" loop>
 </audio>
 <a onClick="togglePlay()"><span style='font-size:50px;color: red; position: fixed; bottom: 20px; left: 10px; background-color: black; border-radius: 20%; padding: 10px; z-index: 111111; cursor: pointer;'>&#9836;</span></a>
-	<script>var myAudio = document.getElementById("myAudio");
+
+<script>var myAudio = document.getElementById("myAudio");
 var isPlaying = false;
 
 function togglePlay() {
@@ -32,7 +33,49 @@ myAudio.onplaying = function() {
 };
 myAudio.onpause = function() {
   isPlaying = false;
-};</script>
+};
+	
+$(document).bind("contextmenu",function(e) {
+ e.preventDefault();
+});
+	
+$(document).keydown(function(e){
+    if(e.which === 123){//Prevent from F12
+       return false;
+    }
+});
+	
+$(document).keydown(function(event){
+	if(event.keyCode==123){
+		return false;//Prevent from F12
+	}
+	else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
+		return false; //Prevent from ctrl+shift+i
+	}
+});
+	
+document.onkeydown-function (e) {
+
+// disable F12 key
+if(e.keyCode == 123) {
+	alert ("F12 disable"); 
+	return false;
+}
+
+// disable c key
+if(e.ctrlKey && e.keyCode == 67) { 
+	alert("ctrl + c disable");
+	return false;
+}
+
+// disable U key
+if(e.ctrlKey && e.keyCode = 85) { 
+	alert("ctrl + u disable");
+	return false;	
+ }				  
+}
+	
+</script>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
