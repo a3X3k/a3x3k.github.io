@@ -290,25 +290,25 @@ myAudio.onpause = function() {
 <script>
 document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
-    alert("Nope! Sorry!! 👹");
+    alert("Nope! Sorry!!👹");
     return false;
   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    alert("Nope! Sorry!! 👹");
+    alert("Nope! Sorry!!👹");
     return false;
   } else if (event.ctrlKey && event.keyCode == 85) {
-    alert("Nope! Sorry!! 👹");
+    alert("Nope! Sorry!!👹");
     return false;
   }
 }, false);
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    alert("Nope! Sorry!! 👹");
+    alert("Nope! Sorry!!👹");
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("Nope! Sorry!! 👹");
+    alert("Nope! Sorry!!👹");
     window.event.returnValue = false;
   });
 }
