@@ -35,45 +35,6 @@ myAudio.onpause = function() {
   isPlaying = false;
 };
 	
-$(document).bind("contextmenu",function(e) {
- e.preventDefault();
-});
-	
-$(document).keydown(function(e){
-    if(e.which === 123){//Prevent from F12
-       return false;
-    }
-});
-	
-$(document).keydown(function(event){
-	if(event.keyCode==123){
-		return false;//Prevent from F12
-	}
-	else if(event.ctrlKey && event.shiftKey && event.keyCode==73){
-		return false; //Prevent from ctrl+shift+i
-	}
-});
-	
-document.onkeydown-function (e) {
-
-// disable F12 key
-if(e.keyCode == 123) {
-	alert ("F12 disable"); 
-	return false;
-}
-
-// disable c key
-if(e.ctrlKey && e.keyCode == 67) { 
-	alert("ctrl + c disable");
-	return false;
-}
-
-// disable U key
-if(e.ctrlKey && e.keyCode = 85) { 
-	alert("ctrl + u disable");
-	return false;	
- }				  
-}
 	
 </script>
     <div class="scroll-up-btn">
@@ -329,25 +290,25 @@ if(e.ctrlKey && e.keyCode = 85) {
 <script>
 document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Nope! Sorry!! 👹");
     return false;
   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Nope! Sorry!! 👹");
     return false;
   } else if (event.ctrlKey && event.keyCode == 85) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Nope! Sorry!! 👹");
     return false;
   }
 }, false);
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Nope! Sorry!! 👹");
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Nope! Sorry!! 👹");
     window.event.returnValue = false;
   });
 }
