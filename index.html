@@ -371,25 +371,25 @@ myAudio.onpause = function() {
 <script>
 document.addEventListener('keydown', function() {
   if (event.keyCode == 123) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Blocked!");
     return false;
   } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Blocked!");
     return false;
   } else if (event.ctrlKey && event.keyCode == 85) {
-    alert("This function has been disabled to prevent you from stealing my code!");
+    alert("Blocked!");
     return false;
   }
 }, false);
 
 if (document.addEventListener) {
   document.addEventListener('contextmenu', function(e) {
-    alert("Nope!");
+    alert("Blocked!");
     e.preventDefault();
   }, false);
 } else {
   document.attachEvent('oncontextmenu', function() {
-    alert("Nope!");
+    alert("Blocked!");
     window.event.returnValue = false;
   });
 }
