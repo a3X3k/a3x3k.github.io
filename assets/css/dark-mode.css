@@ -1,0 +1,105 @@
+/* 03245e */
+
+
+body,
+html
+{
+    background: #2b2b2b;
+    color: #f1f1f1!important;
+}
+
+.side-menu,
+.preloader
+{
+    background: #2b2b2b!important;
+}
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p,
+.side-menu #mainmenu-area li a,
+.about-section .about .about-content .personal-info ul li span,
+.about-section .about .about-content .personal-info ul li span label,
+.about-section .about .about-content .personal-info ul li span a,
+.single-counter .counter-wrapper,
+.section-heading .title,
+.service-wrapper .single-feature .title,
+.home-section .home-content .social-info ul li a:hover i,
+.home-section .home-content .designation span,
+.side-menu .heading-area .name,
+.section-heading .link,
+.project-gallery .project-gallery-filter .project-gallery-menu .filter,
+.info.service-category .service-list li .service,
+.categori-widget .cat-list li a p,
+.latest-post-widget .post-list li .post .post-details .post-title,
+.comment-area .comment-box-area li .comment-box .right .name
+{
+    color: #f1f1f1;
+}
+
+.side-menu {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.side-menu .heading-area {
+    border-bottom: 1px solid rgba(255, 252, 252, 0.1);
+}
+.resume-wrapper .resume-box .resume-title {
+    border-bottom: 1px solid rgba(255, 252, 252, 0.1);
+}
+.resume-wrapper .resume-box .education-list {
+    border-left: 2px solid rgba(255, 252, 252, 0.1);
+}
+.aside-contact-form .heading {
+    border-bottom: 1px solid rgba(255, 252, 252, 0.1);
+}
+.info.service-category .heading,
+.newsletter-widget .title,
+.latest-post-widget .title,
+.categori-widget .title
+ {
+    border-bottom: 1px solid rgba(255, 252, 252, 0.1);
+}
+
+
+
+.form-control, 
+input,
+textarea
+{
+    border-bottom: 1px solid rgba(255, 252, 252, 0.1);
+    color: #fff!important;
+}
+
+
+.resume-wrapper .resume-box .skill-list2 .single-skill2 .circle-progress div span {
+    background-color: #2b2b2b;
+}
+.resume-wrapper .resume-box .skill-list2 .single-skill2 .circle-progress .background
+ {
+    background-color: #555 !important;
+}
+.section-heading .title{
+    position: relative;
+    z-index: 5;
+}
+.section-heading .title .bg-text {
+    z-index: 1;
+}
+.pagination .page-item .page-link {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.section-heading .title .bg-text {
+    color: #fff;
+}
+.progress{
+    background: #555;
+}
+@media  (max-width: 991px) {
+    .side-menu{
+      background: #2b2b2b!important;
+    }
+}
