@@ -998,6 +998,33 @@
     <!-- Custom Scripts-->
     <script src="assets/tempelate-porto/custom-scripts.js"></script>
 	
+<script>
+document.addEventListener('keydown', function() {
+  if (event.keyCode == 123) {
+    alert("Blocked!");
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    alert("Blocked!");
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    alert("Blocked!");
+    return false;
+  }
+}, false);
+
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+    alert("Blocked!");
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+    alert("Blocked!");
+    window.event.returnValue = false;
+  });
+}
+</script>
+
 </body>
 
 </html>
