@@ -89,8 +89,8 @@ $(function ($) {
 
         // counter up
         $('.counter').counterUp({
-        delay: 10,
-        time: 2000
+        delay: 5,
+        time: 1000
         });
     
         // Active Bootstrap Tooltip
