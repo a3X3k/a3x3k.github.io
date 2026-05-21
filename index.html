@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#05070d" />
+  <meta name="description" content="S. Abhishek — Data Engineer at Rolls-Royce, Scopus researcher, digital forensics specialist." />
+  <meta property="og:title" content="S. Abhishek | Data Engineering, Research & Travel" />
+  <meta property="og:description" content="A cinematic portfolio — data engineering, research publications, and travel stories." />
+  <meta property="og:image" content="assets/images/profile.jpg" />
+  <title>S. Abhishek | Data Engineering, Research & Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Martian+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/extras.css" />
+  <script>document.documentElement.classList.toggle('light-mode', localStorage.getItem('theme') === 'light');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="aurora"></div>
+  <div class="grid-bg"></div>
+  <div class="noise"></div>
+
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"><span class="sun">☀</span><span class="moon">☾</span></button>
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+  <button class="palette-toggle" id="paletteToggle" type="button" aria-label="Open command palette">⌘K</button>
+
+  <nav class="topnav" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">S.<span>A</span></a>
+    <button class="mobile-menu" id="mobileMenu" type="button" aria-label="Open menu">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-status"><span></span>Available</div>
+  </nav>
+
+  <div class="nav-progress" id="navProgress" aria-hidden="true"></div>
+
+  <main id="main">
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Data Engineering × Research × Analytics</p>
+        <h1 class="hero-name">
+          <span>S. <b>Abhishek</b></span>
+          <span>Builds intelligence</span>
+          <span>from complexity.</span>
+        </h1>
+        <p class="hero-descriptor"><strong>Data Engineer at Rolls-Royce</strong> and Scopus-indexed researcher focused on production-grade data systems, cloud pipelines, and high-impact AI research. Digital forensics is part of my foundation.</p>
+        <div class="hero-cta">
+          <a class="btn-primary magnetic" href="travel.html">Explore Travel Stories</a>
+          <a class="btn-secondary magnetic" href="#publications">86+ Publications</a>
+          <a class="btn-ghost magnetic" href="assets/S_Abhishek_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <figure class="profile-card tilt" aria-label="Profile portrait">
+        <div class="profile-glow"></div>
+        <img src="assets/images/profile.jpg" alt="S. Abhishek in the mountains" />
+        <figcaption><span>Field note</span>Mountains sharpen perspective. Data sharpens decisions.</figcaption>
+      </figure>
+      <div class="hero-metrics glass">
+        <div><b>3+</b><span>Years</span></div>
+        <div><b id="heroPubs">86</b><span>Publications</span></div>
+        <div><b id="heroCites">380</b><span>Citations</span></div>
+        <div><b>Data</b><span>Focus</span></div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about">
+      <div class="section-header"><span>01 /</span><h2>About <em>Me</em></h2></div>
+      <div class="about-grid">
+        <div>
+          <p class="about-highlight">I bridge the gap between <em>raw data</em>, production platforms, and research-backed decisions.</p>
+          <p>A Computer Science Engineer from <strong>Amrita Vishwa Vidyapeetham</strong>, I specialize in Data Engineering, cloud analytics, ETL pipelines, and applied AI research. Digital forensics and cybersecurity are my earlier foundations.</p>
+          <p>At <strong>Rolls-Royce</strong>, I work on ETL pipelines, data solutions, dashboards and intelligence systems. Earlier, I competed with <strong>Team bi0s</strong> and authored challenges at <strong>Traboda CyberLabs</strong>.</p>
+          <div class="interests">
+            <span>Data Engineering</span><span>Research</span><span>Cloud & Big Data</span>
+            <span>ETL Pipelines</span><span>Analytics</span><span>AI Publications</span><span>Travel</span>
+          </div>
+        </div>
+        <div class="terminal-block">
+          <div class="terminal-bar"><i></i><i></i><i></i></div>
+          <p><b>$ mission</b><br>turn_signal_into_stories()</p>
+          <p><b>$ current_role</b><br><span>Data Engineer @ Rolls-Royce</span></p>
+          <p><b>$ location</b><br>Bengaluru, Karnataka, India 🇮🇳</p>
+          <p><b>$ compass</b><br>data • research • cloud • mountains</p>
+          <p><b>$</b> <span class="t-cursor">█</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section id="experience">
+      <div class="section-header"><span>02 /</span><h2>Work <em>History</em></h2></div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- ═══ EDUCATION ═══ -->
+    <section id="education">
+      <div class="section-header"><span>03 /</span><h2>Education</h2></div>
+      <div class="education-grid">
+        <article class="education-card glass">
+          <span class="edu-kicker">Bachelor of Technology</span>
+          <h3>B.Tech Computer Science &amp; Engineering</h3>
+          <p>Amrita Vishwa Vidyapeetham</p>
+          <div class="edu-meta">
+            <span>Graduated Summer 2023</span>
+            <span>Computer Science</span>
+          </div>
+        </article>
+        <article class="education-card education-focus glass">
+          <span class="edu-kicker">Current Direction</span>
+          <h3>Data Engineering &amp; Research</h3>
+          <p>Building production data systems and research-driven AI solutions, with digital forensics as the earlier foundation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills">
+      <div class="section-header"><span>04 /</span><h2>Tech <em>Stack</em></h2></div>
+      <div class="skills-container" id="skillsContainer"></div>
+    </section>
+
+    <!-- ═══ PUBLICATIONS ═══ -->
+    <section id="publications">
+      <div class="section-header"><span>05 /</span><h2>Research</h2></div>
+
+      <!-- toolbar -->
+      <div class="pub-tools pub-toolbar glass">
+        <label class="search-box pub-search">
+          <span>Search</span>
+          <input id="pubSearch" type="search" placeholder="Search by title, keyword, author…" />
+        </label>
+        <select id="yearFilter" aria-label="Filter by year"><option value="all">All years</option></select>
+        <select id="typeFilter" aria-label="Filter by type"><option value="all">All types</option></select>
+        <select id="sortFilter" aria-label="Sort publications">
+          <option value="newest">Newest first</option>
+          <option value="cited">Most cited</option>
+          <option value="title">Title A–Z</option>
+        </select>
+        <button class="tool-btn" id="exportBib" type="button">BibTeX</button>
+        <button class="tool-btn" id="exportJson" type="button">JSON</button>
+      </div>
+
+      <!-- stats + chart -->
+      <div class="pub-stats" id="pubStats"></div>
+      <div class="pub-chart glass" id="pubChart" aria-label="Publications by year"></div>
+
+      <!-- ★ RESEARCH GRAPH ★ -->
+      <div class="research-graph glass" id="researchGraph" aria-label="Interactive research graph">
+        <div class="graph-head">
+          <div>
+            <span>Interactive map</span>
+            <h3>Research graph</h3>
+            <p>Explore publications by year, type, or theme. Click any node to filter.</p>
+          </div>
+          <select id="graphMode" aria-label="Graph grouping mode">
+            <option value="year">Group by year</option>
+            <option value="type">Group by type</option>
+            <option value="theme">Group by theme</option>
+          </select>
+        </div>
+        <svg id="graphSvg" viewBox="0 0 1000 520" role="img" aria-label="Research publication network"></svg>
+        <p id="graphHint" class="graph-hint">Tip: hover nodes for details · click a node to filter the list below</p>
+      </div>
+
+      <p class="result-count" id="resultCount"></p>
+      <div class="pub-list" id="pubList" role="list"></div>
+      <div class="pub-more"><button class="btn-secondary" id="loadMore" type="button" style="display:none">Load More</button></div>
+    </section>
+
+    <!-- ═══ QUICK LIBRARY (NEW) ═══ -->
+    <section id="quickLibrarySection">
+      <div class="section-header"><span>05b /</span><h2>Quick <em>Library</em></h2></div>
+      <p style="color:var(--muted);margin-bottom:28px;max-width:600px">Browse top publications by research theme. Click any card to see full details and abstract.</p>
+      <div id="quickLibraryRoot" class="quick-library-root"></div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+      <div class="section-header"><span>06 /</span><h2>Let's <em>Connect</em></h2></div>
+      <div class="social-section">
+        <div>
+          <p class="contact-headline">Got an <em>idea</em>, data opportunity, or research collaboration?</p>
+          <p class="contact-text">Open to conversations around data engineering, cloud analytics, ETL systems, AI research collaboration, and travel storytelling.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="https://www.linkedin.com/in/a3x3k/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn-secondary" href="assets/S_Abhishek_Resume.pdf" download>Resume</a>
+            <button class="btn-ghost" id="copyEmail" type="button">Copy Email</button>
+          </div>
+        </div>
+        <div class="social-grid" id="socialGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ MODALS ═══ -->
+  <div class="modal" id="pubModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="command-modal" id="commandModal" aria-hidden="true">
+    <div class="command-box">
+      <input id="commandInput" placeholder="Type: publications, travel, resume, theme…" aria-label="Command search" />
+      <div id="commandResults"></div>
+    </div>
+  </div>
+
+  <footer><span>© 2025 S. Abhishek. Crafted with precision.</span></footer>
+
+  <script src="assets/data/publications.js"></script>
+  <script src="assets/js/scholar-sync.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
